@@ -281,6 +281,7 @@ module Git
     # options:
     #   :add_all
     #   :allow_empty
+    #   :amend
     #   :author
     def commit(message, opts = {})
       self.lib.commit(message, opts)
