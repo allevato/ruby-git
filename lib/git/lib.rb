@@ -714,7 +714,6 @@ module Git
 
       arr_opts << "-#{opts[:count]}" if opts[:count]
       arr_opts << "--no-color"
-      arr_opts << "--skip=#{opts[:skip]}" if opts[:skip]
       arr_opts << "--since=#{opts[:since]}" if opts[:since].is_a? String
       arr_opts << "--until=#{opts[:until]}" if opts[:until].is_a? String
       arr_opts << "--grep=#{opts[:grep]}" if opts[:grep].is_a? String
